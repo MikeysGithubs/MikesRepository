@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party Invite</title>
+</head>
+<body>
+    <style>  
+    body {
+        background-color: rgb(240, 234, 234)
+    }
+    .flex-container {
+     flex-direction: column;
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     border: 1px solid black;
+     margin-top: auto;
+     margin-bottom: auto;
+     margin-right: 300px;
+     margin-left: 300px;
+     background-color: rgb(231, 232, 238);
+ }
+
+
+    h1 {text-align: center;}  
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #rcorners1{
+     border-radius: 25px;
+     border: 2px solid 
+    padding: 20px; 
+    width: 600px;
+    height: 150px; 
+    }
+     p {text-align: center;}
+     
+    </style>
+
+   <h1>Party Invite </h1>
+   <img id="rcorners1"  src = "Screenshot (80).png" alt = "Party">
+   <p><b>Party Invite!!!</b><br>
+You are cordially invited to Michael's Birthday. The party is on 
+Febuary 6th and starts at 10 o'clock. 
+</p>
+
+
+    <div class = "flex-container">
+    
+   <form action ="/action_page.php">
+    <label for ="fname"> What is your name?</label><br>
+    <input type = "text" placeholder="Your answer" name="fname"><br>
+   
+    <br>
+    <div>
+        
+        Can you attend? <br><br>
+        <input answer ="yes/no" type="radio" value="yes"> Yes, i'll be there <br>
+        <input answer ="yes/no" type="radio" value="no"> Sorry, can't make it<br><br>
+
+        <form action ="/action_page.php">
+            <label for ="fname"> How many are attending?</label><br>
+            <input type = "text" placeholder="Your answer" name="attending?"><br><br> 
+        </fieldset>
+    </div>
+    <div>
+    
+        What will you be bringing?
+        let us know what kind of dish(es) you'll be bringing<br><br>
+        <input name="food" type="checkbox" value="Mains"> Mains <br>
+        <input name="food" type="checkbox" value="Salad"> Salad <br>
+        <input name="food" type="checkbox" value="Dessert"> Dessert <br>
+        <input name="food" type="checkbox" value="Drinks"> Drinks <br>
+        <input name="food" type="checkbox" value="Sides/Appetizers"> Sides/Appetizers <br>
+        <input name="food" type="checkbox" value="Other"> Other <br><br>
+    </div>
+    
+    <div>
+        
+        <label for = "Allergies">Do you have any allergies or dietary restrictions?</label><br>
+        <input type = "text" placeholder="Your answer" name = "Allergies"><br><br>
+        
+    </div>
+    <div>
+        
+            <lable for = "Email"> What is your email address?</lable><br>
+            <input type = "text" placeholder="Your anser" name = "answer"><br><br>
+        
+    </div>
+    
+    <div class="col-12">
+        <button style = "color: blueviolet; submit" class="btn btn-primary"> Sign in</button>
+      </div>
+   </form>
+
+</body>
+</html>
