@@ -1,0 +1,178 @@
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+h5 {
+  color: black;
+  text-align: center;
+  animation: fadeOut 2s ease;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  font-size: larger;
+}
+
+
+h1 {
+    color: black;
+    text-align: center;
+   
+}
+
+img {
+  max-width: 100%;
+  height:auto;
+  
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    list-style: none;
+    margin: 100px;
+    background: deepskyblue
+}
+
+.navbar a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+  }
+  
+  .navbara:hover {
+    background: #1565C0;
+  }
+  
+  @media all and (max-width: 800px) {
+    .navbar {
+      justify-content: space-around;
+    }
+  }
+  
+  @media all and (max-width: 600px) {
+    .navbar{
+      flex-flow: column wrap;
+      padding: 0;
+    }
+    .navbar a { 
+      text-align: center; 
+      padding: 10px;
+      border-top: 1px solid rgba(255, 255, 255,0.3); 
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+    }
+    .navbar li:last-of-type a {
+      border-bottom: none;
+    }
+  }
+
+
+
+div.container {
+  text-align: center;
+}
+
+ol.myOL {
+  display: inline-block;
+  text-align: left;
+  
+}
+.center {
+  text-align: center;
+  list-style-position: inside;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table, th, td {
+    border: 1px solid rgb(8, 8, 8);
+    justify-content: center;
+    
+}
+
+#Creator {
+  background-color: red;
+  color:black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: large;
+  font-style: oblique;
+}
+
+div > p {
+    background-color: orange;
+    color: black;
+  
+}
+
+.flex-container {
+  border: 3px solid black;
+  margin-top: 100px;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: orange;
+  color:black;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+body {
+  display: block;
+  margin: 8px;
+  background-image: url(Background.webp);
+  color: black;
+  text-align: center;
+  justify-content: center;
+}
+
+#container {
+  border: 3px solid black;
+  background-color: rgb(190, 250, 250);
+  margin-top: 100px ;
+  margin-bottom: 100px;
+  margin-right: 200px;
+  margin-left: 200px;
+}
+  
+  
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+}
+
+div.gallery {
+
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: middle;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
