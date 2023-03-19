@@ -37,26 +37,30 @@ img {
     list-style: none;
     margin: 100px;
     background: deepskyblue
+
 }
+
+
 
 .navbar a {
     text-decoration: none;
     display: block;
     padding: 1em;
     color: white;
+    text-align: end;
   }
   
   .navbara:hover {
     background: #1565C0;
   }
   
-  @media all and (max-width: 800px) {
+  @media all and (max-width: 500px) {
     .navbar {
       justify-content: space-around;
     }
   }
   
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 500px) {
     .navbar{
       flex-flow: column wrap;
       padding: 0;
@@ -72,6 +76,12 @@ img {
     }
   }
 
+ 
+@media only screen and (max-width: 500px){
+  .site-title{
+    text-align: left;
+  }
+}
 
 
 div.container {
@@ -115,18 +125,6 @@ div > p {
   
 }
 
-.flex-container {
-  border: 3px solid black;
-  margin-top: 100px;
-  margin-bottom: auto;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: orange;
-  color:black;
-  padding: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  
-}
 
 body {
   display: block;
@@ -177,3 +175,85 @@ div.desc {
   text-align: center;
 }
 
+.grid-container{
+  display: grid;
+  justify-items: start;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 200%(100px 100px 100px);
+  gap: 20px ;
+  padding: 1rem;
+  background-color: #2196F3;
+  
+}
+@media only screen and (min-width: 400px){
+  .grid-container{
+    float: auto;
+    width: auto;
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-auto-rows: auto;
+    grid-template-areas: "header header" "sidebar content" "sidebar2 sidebar2" "footer"
+
+  }
+}
+
+.item-a {
+  background-color: yellow;
+  grid-row: 1/4;
+  font-size: 20px;
+  text-align: start;
+  
+}
+
+.item-b{
+  background-color: pink;
+  grid-column: 3;
+  text-align: center;
+ 
+}
+.item-c{
+  background-color: red;
+  grid-column: 1/4;
+   
+}
+.item-d{
+  background-color: yellow;
+  grid-column:2/2;
+
+}
+.item-e{
+  background-color: azure;
+  grid-column: 3;
+  grid-row:3
+  
+}
+.item-f{
+  background-color: darkorange;
+  grid-column: 1/1;
+  
+}
+.item-g{
+  background-color: seagreen;
+  grid-column:3
+}
+.item-h{
+  background-color: darkorchid;
+  grid-column: 2;
+  text-align: center;
+}
+.item-i{
+  background-color: peru;
+ grid-column: 2;
+ text-align: center;
+}
+.item-j{
+  background-color: chartreuse;
+  grid-column: 2/3;
+  
+    
+}
+.item-k{
+  background-color: bisque;
+  grid-column:1/2;
+}
